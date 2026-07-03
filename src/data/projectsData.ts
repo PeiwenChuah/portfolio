@@ -1,6 +1,26 @@
 import { Project } from '../types';
 
-export const projectsData: Project[] = [
+// Eagerly import every file in src/media so Vite bundles them, hashes them,
+// and applies the correct base path ('/portfolio/') at build time.
+const mediaModules = import.meta.glob('../media/**/*', {
+  eager: true,
+  import: 'default',
+}) as Record<string, string>;
+
+function resolveMedia(paths?: string[]): string[] | undefined {
+  if (!paths) return paths;
+  return paths.map((p) => {
+    // 'src/media/foo.png' -> '../media/foo.png' to match the glob keys above
+    const key = p.replace(/^src\//, '../');
+    const resolved = mediaModules[key];
+    if (!resolved) {
+      console.warn(`[projectsData] Media file not found: ${p}`);
+    }
+    return resolved ?? p;
+  });
+}
+
+const rawProjectsData: Project[] = [
   // --- DATA SCIENCE & AI PROJECTS ---
   {
     id: 'healthcare-dashboard-malaysia',
@@ -205,3 +225,8 @@ export const projectsData: Project[] = [
     media: ['src/media/2099.png']
   }
 ];
+
+export const projectsData: Project[] = rawProjectsData.map((project) => ({
+  ...project,
+  media: resolveMedia(project.media),
+}));
