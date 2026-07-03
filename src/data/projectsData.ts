@@ -6,7 +6,7 @@ export const projectsData: Project[] = [
     id: 'healthcare-dashboard-malaysia',
     title: 'Healthcare in Malaysia Interactive Dashboard',
     category: 'data_science',
-    description: 'An interactive data visualization dashboard analyzing Malaysia\'s healthcare system across infrastructure, workforce, disease burden, and finance using government open data sources.',
+    description: 'Interactive dashboard visualizing healthcare disparities across Malaysia\'s 16 states.',
     technologies: ['Vega-Lite', 'Vega', 'HTML', 'JavaScript'],
     highlights: [
       'Built an interactive data visualization dashboard analyzing Malaysia\'s healthcare system across infrastructure, workforce, disease burden, and finance using government open data sources.',
@@ -19,7 +19,7 @@ export const projectsData: Project[] = [
     id: 'movies-dashboard-malaysia',
     title: 'Movies Industry Dashboard in Malaysia',
     category: 'data_science',
-    description: 'An interactive Tableau dashboard analyzing over 25 years of Malaysian movie data from IMDb and TMDb to uncover industry growth trends, seasonal demand, and genre shifts.',
+    description: 'Tableau dashboard uncovering 25+ years of trends in the Malaysian film industry.',
     technologies: ['Tableau', 'Python', 'Pandas'],
     highlights: [
       'Developed an interactive Tableau dashboard analyzing 25+ years of Malaysian movie data (IMDb & TMDb), including data cleaning, to uncover industry growth trends, seasonal demand, and genre shifts through exploratory data analysis.',
@@ -32,7 +32,7 @@ export const projectsData: Project[] = [
     id: 'pacman-rl',
     title: 'Pac-Man AI Agent',
     category: 'data_science',
-    description: 'An AI agent for Pac-Man combining search, adversarial game-playing, reinforcement learning, and a from-scratch neural network across 12+ maze layouts.',
+    description: 'AI agent for Pac-Man combining search, adversarial play, and reinforcement learning.',
     technologies: ['Python'],
     highlights: [
       'Designed and implemented A* search with Manhattan-distance heuristic for optimal single-goal pathfinding, and a custom greedy best-first + beam search algorithm (with MST-approximation heuristic) to solve multi-dot collection problems under strict time constraints across 11+ maze layouts.',
@@ -46,7 +46,7 @@ export const projectsData: Project[] = [
     id: 'multi-llm-orchestration',
     title: 'Multi-LLM Coding System',
     category: 'data_science',
-    description: 'A full-stack web app that orchestrates multiple LLMs to generate, rank, and return the best coding response via a pairwise ranking pipeline.',
+    description: 'Full-stack app that ranks multi-LLM coding responses to return the best answer.',
     technologies: ['TypeScript', 'React', 'Python', 'Firebase', 'Hugging Face API'],
     highlights: [
       'Led backend development for a full-stack web app that orchestrates multiple LLMs (Gemma, Qwen, DeepSeek) to generate, rank, and return the best coding response via a pairwise ranking pipeline.',
@@ -60,7 +60,7 @@ export const projectsData: Project[] = [
     id: 'neural-network-image-text',
     title: 'Neural Network Applications Across Image And Text Data',
     category: 'data_science',
-    description: 'RNN, Transformer (BERT), DNN, and CNN models for text and image classification, achieving 97.5% accuracy on a question dataset and 87.4% accuracy on FashionMNIST.',
+    description: 'Neural networks for text and image classification, reaching 97.5% and 87.4% accuracy.',
     technologies: ['PyTorch', 'Python', 'Matplotlib', 'Numpy', 'Pandas'],
     highlights: [
       'Developed RNNs (LSTM/GRU) and Transformer models (BERT) for text classification on a 5,500-question dataset with 6 main question categories, achieving 97.5% accuracy.',
@@ -73,7 +73,7 @@ export const projectsData: Project[] = [
     id: 'world-values-survey',
     title: 'World Values Survey: Cross-Country Confidence Analysis & Prediction',
     category: 'data_science',
-    description: 'A statistical and machine learning analysis of 100,000 survey responses across 58 countries, benchmarking classification models to predict confidence in social organizations.',
+    description: 'Cross-country survey analysis predicting institutional confidence across nations.',
     technologies: ['R', 'dplyr', 'ggplot2', 'glmnet', 'randomForest', 'adabag', 'neuralnet'],
     highlights: [
       'Analyzed 100,000 survey responses across 58 countries, using correlation analysis, t-tests, and LASSO regression to uncover key predictors of institutional confidence and how they diverge between a focus country and the rest of the world.',
@@ -85,7 +85,7 @@ export const projectsData: Project[] = [
     id: 'text-analysis-engine',
     title: 'Text Corpus Analysis',
     category: 'data_science',
-    description: 'A text-mining and network analysis pipeline achieving 100% genre classification accuracy across a 21-document corpus spanning three genres.',
+    description: 'Text-mining pipeline achieving 100% genre classification across a 21-document corpus.',
     technologies: ['R', 'tm', 'igraph', 'SentimentAnalysis', 'proxy', 'SnowballC', 'ggplot2'],
     highlights: [
       'Built and processed a 21-document text corpus spanning 3 genres (Food, Nature, AI) into a Document-Term Matrix, applying tokenization, stemming, stopword removal, and custom text cleaning to reduce ~3,744 raw terms to 25 discriminative tokens.',
@@ -99,7 +99,7 @@ export const projectsData: Project[] = [
     id: 'bayesian-model',
     title: 'Pneumonia Diagnosis & Clinical Decision Support System',
     category: 'data_science',
-    description: 'A 7-node Bayesian Network modeling bacterial, viral, and non-pneumonia diagnoses, extended into a decision network for evidence-based clinical decision-making.',
+    description: 'Bayesian Network supporting evidence-based pneumonia diagnosis and treatment decisions.',
     technologies: ['Netica', 'Bayesian Networks'],
     highlights: [
       'Designed a 7-node Bayesian Network to model bacterial, viral, and non-pneumonia diagnoses using 7 clinical variables and probabilistic reasoning.',
@@ -113,7 +113,7 @@ export const projectsData: Project[] = [
     id: 'run-monash-database',
     title: 'Run Monash Database Management System',
     category: 'data_science',
-    description: 'A database management system for a running carnival, supporting competitor registration, event participation, team management, and charity fundraising.',
+    description: 'Relational database system managing a running carnival\'s events and fundraising.',
     technologies: ['Oracle SQL', 'PL/SQL', 'MongoDB'],
     highlights: [
       'Developed a database management system for a running carnival, supporting competitor registration, event participation, team management, and charity fundraising.',
@@ -125,7 +125,7 @@ export const projectsData: Project[] = [
     id: 'diabetes-risk-prediction',
     title: 'Diabetes Risk Prediction System',
     category: 'data_science',
-    description: 'A diabetes risk prediction pipeline built in SAS Viya, benchmarking six machine learning models with feature engineering to detect high-risk patients.',
+    description: 'SAS Viya pipeline predicting diabetes risk with a 96.49% AUC for Gradient Boosting model.',
     technologies: ['SAS Viya', 'SAS Model Studio'],
     highlights: [
       'Developed a diabetes risk prediction pipeline using SAS Viya with six machine learning models.',
@@ -140,7 +140,7 @@ export const projectsData: Project[] = [
     id: 'ai-personality-identification',
     title: 'Artificial Intelligence Personality Identification',
     category: 'computer_science',
-    description: 'An AI system that analyzes personality responses and behavioral patterns to enable secure login authentication, powered by a fine-tuned HuggingFace GPT-4o model.',
+    description: 'Fine-tuned GPT-4o system authenticating users via personality analysis.',
     technologies: ['PyTorch', 'Python', 'HuggingFace'],
     highlights: [
       'Developed an AI system that analyzes personality responses and behavioral patterns to enable secure login authentication.',
@@ -153,7 +153,7 @@ export const projectsData: Project[] = [
     id: 'markdown-parser',
     title: 'Markdown To HTML Parser',
     category: 'computer_science',
-    description: 'A Markdown-to-HTML parser built in Haskell, supporting a wide range of Markdown syntax with a TypeScript/AJAX front end.',
+    description: 'Haskell-based parser converting Markdown syntax into clean HTML output.',
     technologies: ['Haskell', 'HTML', 'TypeScript', 'CSS', 'AJAX'],
     highlights: [
       'Parsed different types of Markdown syntax and generated its corresponding HTML output using Haskell.',
@@ -166,7 +166,7 @@ export const projectsData: Project[] = [
     id: 'guitar-hero',
     title: 'Guitar Hero Game',
     category: 'computer_science',
-    description: 'A browser-based music game built with Functional Reactive Programming techniques in TypeScript and RxJS.',
+    description: 'Browser-based rhythm game built with Functional Reactive Programming in TypeScript.',
     technologies: ['TypeScript', 'HTML', 'CSS', 'RxJS'],
     highlights: [
       'Created a music game using Functional Reactive Programming (FRP) techniques in TypeScript.',
@@ -178,7 +178,7 @@ export const projectsData: Project[] = [
     id: 'mobile-app',
     title: 'NutriTrack',
     category: 'computer_science',
-    description: 'A clinical-grade nutrition Android app translating HEIFA dietary scores into personalized, patient-facing visualizations and AI-generated coaching.',
+    description: 'Android app translating dietary scores into personalized nutrition insights.',
     technologies: ['Kotlin', 'Jetpack Compose', 'Room (SQLite)', 'Gemini API', 'SharedPreferences', 'MVVM'],
     highlights: [
       'Built a clinical-grade nutrition Android app that translates HEIFA (Healthy Eating Index) dietary scores into personalized, patient-facing visualizations, following an MVVM architecture across 6+ screens (Login, Questionnaire, Home, Insights, NutriCoach, Clinician Dashboard).',
@@ -194,7 +194,7 @@ export const projectsData: Project[] = [
     id: 'terminal-game',
     title: 'Static Factory',
     category: 'computer_science',
-    description: 'A multi-map, text-based roguelike game in Java built around SOLID design principles and extensible actor/item/behavior hierarchies.',
+    description: 'Text-based Java roguelike game built around SOLID object-oriented design.',
     technologies: ['Java', 'Object-Oriented Design', 'UML'],
     highlights: [
       'Designed and implemented a multi-map, text-based roguelike game in Java with 12+ major feature requirements.',
