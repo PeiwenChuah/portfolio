@@ -2,10 +2,13 @@ import { Project } from '../types';
 
 // Eagerly import every file in src/media so Vite bundles them, hashes them,
 // and applies the correct base path ('/portfolio/') at build time.
-const mediaModules = import.meta.glob('../media/**/*', {
-  eager: true,
-  import: 'default',
-}) as Record<string, string>;
+const mediaModules = import.meta.glob(
+  '../media/**/*.{png,jpg,jpeg,gif,webp,svg,mp4,webm,mov,ogg}',
+  {
+    eager: true,
+    import: 'default',
+  }
+) as Record<string, string>;
 
 function resolveMedia(paths?: string[]): string[] | undefined {
   if (!paths) return paths;
