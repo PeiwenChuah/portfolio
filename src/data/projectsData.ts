@@ -13,7 +13,7 @@ export const projectsData: Project[] = [
       'Analyzed healthcare indicators across all 16 Malaysian states, uncovering significant disparities in hospital capacity and workforce between East and West Malaysia.'
     ],
     link: 'https://peiwenchuah.github.io/FIT2179-A2-Code/',
-    media: ['/assets/media/healthcare.jpeg',]
+    media: ['src/media/healthcare.jpeg']
   },
   {
     id: 'movies-dashboard-malaysia',
@@ -26,7 +26,7 @@ export const projectsData: Project[] = [
       'Identified and evaluated key factors influencing movie performance, explaining variations in ratings and revenue.'
     ],
     link: 'https://public.tableau.com/views/FIT2179Assignment1Updated/Dashboard6?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link',
-    media: ['/assets/media/movie.png']
+    media: ['src/media/movie.png']
   },
   {
     id: 'multi-llm-orchestration',
@@ -40,7 +40,7 @@ export const projectsData: Project[] = [
       'Built an automated prompt-optimisation service (using Qwen2.5-Coder-3B) that tested 4 system-prompt variants, improving pass@1 by 2.13% over the unoptimised baseline.',
       'Integrated Firebase to persist chat sessions, model responses, and pairwise ranking metadata, supporting full response traceability and explainability.'
     ],
-    media: ['/assets/media/FINAL DEMO.mp4',]
+    media: ['src/media/FINAL DEMO.mp4',]
   },
   {
     id: 'pacman-rl',
@@ -54,7 +54,7 @@ export const projectsData: Project[] = [
       'Implemented Value Iteration and Q-Learning (epsilon-greedy) reinforcement learning agents to solve stochastic Markov Decision Processes, tuning discount factor, learning rate, and exploration rate through systematic experimentation across small/medium/large maze environments.',
       'Engineered a multi-layer perceptron from scratch with Leaky ReLU, He/Xavier initialization, L2 regularization, and learning rate decay to predict optimal Pac-Man actions, achieving 97.75% test accuracy.'
     ],
-    media: ['/assets/media/pacman1.mp4', '/assets/media/pacman2.mp4']
+    media: ['src/media/pacman1.mp4', 'src/media/pacman2.mp4']
   },
   {
     id: 'world-values-survey',
@@ -66,7 +66,7 @@ export const projectsData: Project[] = [
       'Analyzed 100,000 survey responses across 58 countries, using correlation analysis, t-tests, and LASSO regression to uncover key predictors of institutional confidence and how they diverge between a focus country and the rest of the world.',
       'Built and benchmarked 6 classification models on 20,000 respondents to predict confidence in social organizations, with Boosting emerging as the best overall performer (F1-score of 0.72, AUC of 0.64).'
     ],
-    media: ['/assets/media/survey.png', '/assets/media/confidence.png', '/assets/media/correlation.png', '/assets/media/meanresponse.png', '/assets/media/r2.png', '/assets/media/significance.png']
+    media: ['src/media/survey.png', 'src/media/confidence.png', 'src/media/correlation.png', 'src/media/meanresponse.png', 'src/media/r2.png', 'src/media/significance.png']
   },
   {
     id: 'text-analysis-engine',
@@ -80,7 +80,7 @@ export const projectsData: Project[] = [
       'Conducted sentiment analysis using the QDAP lexicon across all documents and applied pairwise t-tests to identify statistically significant differences in sentiment/positivity across genres.',
       'Designed and built single-mode (document-document and word-word) and bipartite (document-token) network graphs using cosine similarity/shared-term adjacency matrices, applying 7 community detection algorithms (Louvain, Walktrap, Leading Eigenvector, etc.) to identify optimal genre clustering, achieving up to 95% clustering accuracy.'
     ],
-    media: ['/assets/media/corpus_word.png','/assets/media/corpus_sen.png', '/assets/media/corpus_hier.png', '/assets/media/corpus_doc.png', '/assets/media/corpus_w.png', '/assets/media/corpus_bi.png']
+    media: ['src/media/corpus_word.png','src/media/corpus_sen.png', 'src/media/corpus_hier.png', 'src/media/corpus_doc.png', 'src/media/corpus_w.png', 'src/media/corpus_bi.png']
   },
   {
     id: 'neural-network-image-text',
@@ -93,7 +93,7 @@ export const projectsData: Project[] = [
       'Built DNN and CNN models with adversarial training for image classification on the FashionMNIST dataset (70,000 grayscale images, 28×28 pixels, 10 classes), optimizing performance through hyperparameter tuning, achieving 87.4% accuracy.',
       'Benchmarked the baseline CNN against One-vs-All (OVA) adversarial training, CutMix, and Mixup augmentation strategies, with all three techniques lifting validation accuracy well above the baseline.'
     ],
-    media: ['/assets/media/dl2.png','/assets/media/dl3.png','/assets/media/dl4.png', '/assets/media/dl1.png']
+    media: ['src/media/dl2.png','src/media/dl3.png','src/media/dl4.png', 'src/media/dl1.png']
   },
   {
     id: 'bayesian-model',
@@ -107,7 +107,7 @@ export const projectsData: Project[] = [
       'Extended the model into a Bayesian Decision Network with 2 decision nodes and 3 utility nodes, enabling expected utility analysis for X-ray and antibiotic treatment decisions.',
       'Performed probabilistic inference and sensitivity analysis across multiple patient scenarios, supporting evidence-based clinical decision-making under uncertainty.'
     ],
-    media: ['/assets/media/netica1.png', '/assets/media/netica2.png']
+    media: ['src/media/netica1.png', 'src/media/netica2.png']
   },
   {
     id: 'diabetes-risk-prediction',
@@ -120,7 +120,7 @@ export const projectsData: Project[] = [
       'Applied feature engineering techniques including skewness correction, imputation, and categorical optimization.',
       'Built a champion Gradient Boosting model with 96.49% AUC, 90.00% sensitivity, and 81.33% KS for high-risk diabetes detection.'
     ],
-    media: ['/assets/media/pipe1.png','/assets/media/pipe2.png','/assets/media/pipe3.png', '/assets/media/pipe4.png', '/assets/media/pipe5.png']
+    media: ['src/media/pipe1.png','src/media/pipe2.png','src/media/pipe3.png', 'src/media/pipe4.png', 'src/media/pipe5.png']
   },
   {
     id: 'run-monash-database',
@@ -132,7 +132,7 @@ export const projectsData: Project[] = [
       'Developed a database management system for a running carnival, supporting competitor registration, event participation, team management, and charity fundraising.',
       'Designed and implemented a relational database with 7 tables, using constraints and PL/SQL procedures, functions, and triggers to enforce business rules and maintain data integrity.'
     ],
-    media: [ '/assets/media/database.png']
+    media: [ 'src/media/database.png']
   },
 
   // --- COMPUTER SCIENCE PROJECTS ---
@@ -147,7 +147,7 @@ export const projectsData: Project[] = [
       'Fine-tuned a HuggingFace GPT-4o model with personality datasets, optimizing hyperparameters for improved sentiment analysis and personality mapping, achieving 90% testing accuracy.',
       'Selected as one of the Top 10 teams from 90+ competing teams at GODAMLAH Hackathon 2024.'
     ],
-    media: ['/assets/media/godam1.png', '/assets/media/godam2.png']
+    media: ['src/media/godam1.png', 'src/media/godam2.png']
   },
   {
     id: 'markdown-parser',
@@ -160,7 +160,7 @@ export const projectsData: Project[] = [
       'Used AJAX to handle communication between the Haskell backend and the webpage.',
       'Types of Markdown syntax parsed: Image, Footnote references, Free text with text modifiers, Headings, Blockquotes, Code, Ordered lists, Table.'
     ],
-    media: ['/assets/media/haskell2.png','/assets/media/haskell1.png']
+    media: ['src/media/haskell2.png','src/media/haskell1.png']
   },
   {
     id: 'guitar-hero',
@@ -172,7 +172,7 @@ export const projectsData: Project[] = [
       'Created a music game using Functional Reactive Programming (FRP) techniques in TypeScript.',
       'Used RxJS Observable streams to handle animation, user interaction, and other similar stream behaviours.'
     ],
-    media: ['/assets/media/hero.png']
+    media: ['src/media/hero.png']
   },
   {
     id: 'mobile-app',
@@ -188,7 +188,7 @@ export const projectsData: Project[] = [
       'Built a Clinician/Admin dashboard aggregating population-level statistics (e.g., average HEIFA scores by sex) and surfaced AI-detected data patterns across the patient dataset for healthcare professionals.',
       'Added dark/light theme support with persistent user preferences via SharedPreferences, and multi-screen navigation using Jetpack Compose Navigation with argument passing.'
     ],
-    media: ['/assets/media/app1.png', '/assets/media/app2.png', '/assets/media/app3.png', '/assets/media/app4.png']
+    media: ['src/media/app1.png', 'src/media/app2.png', 'src/media/app3.png', 'src/media/app4.png']
   },
   {
     id: 'terminal-game',
@@ -202,6 +202,6 @@ export const projectsData: Project[] = [
       'Built core gameplay systems including inventory/scrap collection, resource trading economy (credit-based purchasing/selling with probabilistic pricing outcomes), combat mechanics (multiple weapons with variable accuracy/damage), and NPC behaviors (wandering, following, stealing, attacking).',
       'Implemented cross-map travel and teleportation mechanics, a subscription-based AI companion item, and a multi-stage plant growth system refactored to eliminate code duplication across tree lifecycle states.'
     ],
-    media: ['/assets/media/2099.png']
+    media: ['src/media/2099.png']
   }
 ];

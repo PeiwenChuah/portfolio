@@ -18,7 +18,7 @@ export interface Project {
   link?: string;
   /**
    * Paths to screenshots/video clips shown inside the modal, e.g.
-   * ['/assets/media/my-project-1.png', '/assets/media/my-project-2.mp4'].
+   * ['/src/media/my-project-1.png', '/src/media/my-project-2.mp4'].
    * Files ending in .mp4/.webm/.mov/.ogg render as a video player;
    * everything else renders as an image. Leave undefined/empty if you
    * don't have media for a project yet.
