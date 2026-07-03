@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Project } from '../types';
-import { X, CheckCircle, ImageOff, ExternalLink } from 'lucide-react';
+import { X, CheckCircle, ImageOff, ExternalLink, ZoomIn } from 'lucide-react';
 
 interface ProjectModalProps {
   project: Project;
@@ -16,6 +16,7 @@ function isVideo(src: string): boolean {
 
 export default function ProjectModal({ project, onClose }: ProjectModalProps) {
   const media = project.media ?? [];
+  const [enlargedSrc, setEnlargedSrc] = useState<string | null>(null);
 
   return (
     <div
@@ -82,12 +83,24 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                     className="w-full h-auto rounded-xl border border-slate-200 bg-slate-50"
                   />
                 ) : (
-                  <img
+                  <button
                     key={idx}
-                    src={src}
-                    alt={`${project.title} screenshot ${idx + 1}`}
-                    className="w-full h-auto rounded-xl border border-slate-200 bg-slate-50 object-contain"
-                  />
+                    type="button"
+                    onClick={() => setEnlargedSrc(src)}
+                    className="group relative w-full block rounded-xl overflow-hidden border border-slate-200 bg-slate-50 cursor-zoom-in"
+                  >
+                    <img
+                      src={src}
+                      alt={`${project.title} screenshot ${idx + 1}`}
+                      className="w-full h-auto object-contain"
+                    />
+                    <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/20 transition-colors flex items-center justify-center">
+                      <ZoomIn
+                        size={28}
+                        className="text-white opacity-0 group-hover:opacity-100 transition-opacity drop-shadow-lg"
+                      />
+                    </div>
+                  </button>
                 )
               )}
             </div>
@@ -101,6 +114,33 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           )}
         </div>
       </div>
+
+      {/* Fullscreen lightbox for enlarged image */}
+      {enlargedSrc && (
+        <div
+          className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-slate-950/90"
+          onClick={(e: React.MouseEvent) => {
+            e.stopPropagation();
+            setEnlargedSrc(null);
+          }}
+        >
+          <button
+            onClick={(e: React.MouseEvent) => {
+              e.stopPropagation();
+              setEnlargedSrc(null);
+            }}
+            className="absolute top-5 right-5 p-2 px-3 bg-white/10 hover:bg-white/20 border border-white/20 text-white transition-all text-xs font-mono font-bold rounded-lg flex items-center gap-1 cursor-pointer select-none"
+          >
+            <X size={14} /> CLOSE
+          </button>
+          <img
+            src={enlargedSrc}
+            alt="Enlarged screenshot"
+            className="max-w-full max-h-full object-contain rounded-lg"
+            onClick={(e: React.MouseEvent) => e.stopPropagation()}
+          />
+        </div>
+      )}
     </div>
   );
 }

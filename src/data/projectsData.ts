@@ -47,7 +47,7 @@ export const projectsData: Project[] = [
     title: 'Multi-LLM Coding System',
     category: 'data_science',
     description: 'Full-stack app that ranks multi-LLM coding responses to return the best answer.',
-    technologies: ['TypeScript', 'React', 'Python', 'Firebase', 'Hugging Face API'],
+    technologies: ['Python', 'TypeScript', 'React', 'Firebase', 'Hugging Face API'],
     highlights: [
       'Led backend development for a full-stack web app that orchestrates multiple LLMs (Gemma, Qwen, DeepSeek) to generate, rank, and return the best coding response via a pairwise ranking pipeline.',
       'Benchmarked 6 open-source LLMs on the HumanEval dataset and designed experiments across model-size combinations, discovering that pairing models of similar accuracy (rather than max size) boosted pass@1 by up to +6.39% over the best single model.',
