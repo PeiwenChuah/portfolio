@@ -29,20 +29,6 @@ export const projectsData: Project[] = [
     media: ['/assets/media/movie.png']
   },
   {
-    id: 'pacman-rl',
-    title: 'Pac-Man AI Agent',
-    category: 'data_science',
-    description: 'AI agent for Pac-Man combining search, adversarial play, and reinforcement learning.',
-    technologies: ['Python'],
-    highlights: [
-      'Designed and implemented A* search with Manhattan-distance heuristic for optimal single-goal pathfinding, and a custom greedy best-first + beam search algorithm (with MST-approximation heuristic) to solve multi-dot collection problems under strict time constraints across 11+ maze layouts.',
-      'Built an adversarial game-playing agent using minimax with alpha-beta pruning and a custom evaluation function (ghost/food/capsule distance weighting) plus anti-oscillation logic, improving game scores across 12 maze layouts.',
-      'Implemented Value Iteration and Q-Learning (epsilon-greedy) reinforcement learning agents to solve stochastic Markov Decision Processes, tuning discount factor, learning rate, and exploration rate through systematic experimentation across small/medium/large maze environments.',
-      'Engineered a multi-layer perceptron from scratch with Leaky ReLU, He/Xavier initialization, L2 regularization, and learning rate decay to predict optimal Pac-Man actions, achieving 97.75% test accuracy.'
-    ],
-    media: ['/assets/media/pacman1.mp4', '/assets/media/pacman2.mp4']
-  },
-  {
     id: 'multi-llm-orchestration',
     title: 'Multi-LLM Coding System',
     category: 'data_science',
@@ -57,17 +43,18 @@ export const projectsData: Project[] = [
     media: ['/assets/media/FINAL DEMO.mp4',]
   },
   {
-    id: 'neural-network-image-text',
-    title: 'Neural Network Applications Across Image And Text Data',
+    id: 'pacman-rl',
+    title: 'Pac-Man AI Agent',
     category: 'data_science',
-    description: 'Neural networks for text and image classification, reaching 97.5% and 87.4% accuracy.',
-    technologies: ['PyTorch', 'Python', 'Matplotlib', 'Numpy', 'Pandas'],
+    description: 'AI agent for Pac-Man combining search, adversarial play, and reinforcement learning.',
+    technologies: ['Python'],
     highlights: [
-      'Developed RNNs (LSTM/GRU) and Transformer models (BERT) for text classification on a 5,500-question dataset with 6 main question categories, achieving 97.5% accuracy.',
-      'Built DNN and CNN models with adversarial training for image classification on the FashionMNIST dataset (70,000 grayscale images, 28×28 pixels, 10 classes), optimizing performance through hyperparameter tuning, achieving 87.4% accuracy.',
-      'Benchmarked the baseline CNN against One-vs-All (OVA) adversarial training, CutMix, and Mixup augmentation strategies, with all three techniques lifting validation accuracy well above the baseline.'
+      'Designed and implemented A* search with Manhattan-distance heuristic for optimal single-goal pathfinding, and a custom greedy best-first + beam search algorithm (with MST-approximation heuristic) to solve multi-dot collection problems under strict time constraints across 11+ maze layouts.',
+      'Built an adversarial game-playing agent using minimax with alpha-beta pruning and a custom evaluation function (ghost/food/capsule distance weighting) plus anti-oscillation logic, improving game scores across 12 maze layouts.',
+      'Implemented Value Iteration and Q-Learning (epsilon-greedy) reinforcement learning agents to solve stochastic Markov Decision Processes, tuning discount factor, learning rate, and exploration rate through systematic experimentation across small/medium/large maze environments.',
+      'Engineered a multi-layer perceptron from scratch with Leaky ReLU, He/Xavier initialization, L2 regularization, and learning rate decay to predict optimal Pac-Man actions, achieving 97.75% test accuracy.'
     ],
-    media: ['/assets/media/dl2.png','/assets/media/dl3.png','/assets/media/dl4.png', '/assets/media/dl1.png']
+    media: ['/assets/media/pacman1.mp4', '/assets/media/pacman2.mp4']
   },
   {
     id: 'world-values-survey',
@@ -96,6 +83,19 @@ export const projectsData: Project[] = [
     media: ['/assets/media/corpus_word.png','/assets/media/corpus_sen.png', '/assets/media/corpus_hier.png', '/assets/media/corpus_doc.png', '/assets/media/corpus_w.png', '/assets/media/corpus_bi.png']
   },
   {
+    id: 'neural-network-image-text',
+    title: 'Neural Network Applications Across Image And Text Data',
+    category: 'data_science',
+    description: 'Neural networks for text and image classification, reaching 97.5% and 87.4% accuracy.',
+    technologies: ['PyTorch', 'Python', 'Matplotlib', 'Numpy', 'Pandas'],
+    highlights: [
+      'Developed RNNs (LSTM/GRU) and Transformer models (BERT) for text classification on a 5,500-question dataset with 6 main question categories, achieving 97.5% accuracy.',
+      'Built DNN and CNN models with adversarial training for image classification on the FashionMNIST dataset (70,000 grayscale images, 28×28 pixels, 10 classes), optimizing performance through hyperparameter tuning, achieving 87.4% accuracy.',
+      'Benchmarked the baseline CNN against One-vs-All (OVA) adversarial training, CutMix, and Mixup augmentation strategies, with all three techniques lifting validation accuracy well above the baseline.'
+    ],
+    media: ['/assets/media/dl2.png','/assets/media/dl3.png','/assets/media/dl4.png', '/assets/media/dl1.png']
+  },
+  {
     id: 'bayesian-model',
     title: 'Pneumonia Diagnosis & Clinical Decision Support System',
     category: 'data_science',
@@ -110,18 +110,6 @@ export const projectsData: Project[] = [
     media: ['/assets/media/netica1.png', '/assets/media/netica2.png']
   },
   {
-    id: 'run-monash-database',
-    title: 'Run Monash Database Management System',
-    category: 'data_science',
-    description: 'Relational database system managing a running carnival\'s events and fundraising.',
-    technologies: ['Oracle SQL', 'PL/SQL', 'MongoDB'],
-    highlights: [
-      'Developed a database management system for a running carnival, supporting competitor registration, event participation, team management, and charity fundraising.',
-      'Designed and implemented a relational database with 7 tables, using constraints and PL/SQL procedures, functions, and triggers to enforce business rules and maintain data integrity.'
-    ],
-    media: [ '/assets/media/database.png']
-  },
-  {
     id: 'diabetes-risk-prediction',
     title: 'Diabetes Risk Prediction System',
     category: 'data_science',
@@ -133,6 +121,18 @@ export const projectsData: Project[] = [
       'Built a champion Gradient Boosting model with 96.49% AUC, 90.00% sensitivity, and 81.33% KS for high-risk diabetes detection.'
     ],
     media: ['/assets/media/pipe1.png','/assets/media/pipe2.png','/assets/media/pipe3.png', '/assets/media/pipe4.png', '/assets/media/pipe5.png']
+  },
+  {
+    id: 'run-monash-database',
+    title: 'Run Monash Database Management System',
+    category: 'data_science',
+    description: 'Relational database system managing a running carnival\'s events and fundraising.',
+    technologies: ['Oracle SQL', 'PL/SQL', 'MongoDB'],
+    highlights: [
+      'Developed a database management system for a running carnival, supporting competitor registration, event participation, team management, and charity fundraising.',
+      'Designed and implemented a relational database with 7 tables, using constraints and PL/SQL procedures, functions, and triggers to enforce business rules and maintain data integrity.'
+    ],
+    media: [ '/assets/media/database.png']
   },
 
   // --- COMPUTER SCIENCE PROJECTS ---
